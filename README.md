@@ -1,5 +1,8 @@
 # Analytics Engineer Challenge
 
+## About XCLAIM
+XCLAIM's core product is a 2-sided marketplace for buyers (hedge funds, banks, and some individual investors) and sellers (creditors) of claims (unpaid invoices) in a chapter 11 US-based bankruptcy. 
+
 ## Things You Should Know
 
 ### negotiations.csv
@@ -16,9 +19,9 @@
 - action
 
 ### Notes
-- You can *assume* the negotiation event with the highest ID is the most recent
-- `buyer_entity_id` and `legal_entity_id` are from the same `legal_entities` table
-- Seller actions/events are any event not made by the initial `buyer_entity_id` and may for the purposes of conversion, include only: offer, accept, and decline
+- You can *assume* the negotiation event with the highest ID is the most recent.
+- `buyer_entity_id` and `legal_entity_id` are from the same `legal_entities` table.
+- Seller actions/events are any event not made by the initial `buyer_entity_id` and may for the purposes of conversion, include only: offer, accept, and decline. Both buyers and sellers can have offer, accept, and decline events, but only a buyer can have the first offer even on a negotiation.
 - Warning: this data represents real world data and may have some inconsistencies.
 
 ## Your Task
