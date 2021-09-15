@@ -28,7 +28,7 @@ XCLAIM's core product is a 2-sided marketplace for buyers (hedge funds, banks, a
 - Warning: this data represents real world data and may have some inconsistencies.
 
 ## Your Task
-Please dedicate no more than four hours to this challenge. Clone this repository and send Stuart, stuart@x-claim.com, a link to your repository when you are done. be sure include screenshots of the visualizations in your submission.
+Please dedicate no more than four hours to this challenge. Clone this repository, commit your code to your clone, and send a link Stuart, stuart@x-claim.com, a link to your repository when you are done. be sure include screenshots of the visualizations in your submission.
 
 ### Create Visualizations
 1. Number of buyers (y) with an offer per month (x).
@@ -36,4 +36,9 @@ Please dedicate no more than four hours to this challenge. Clone this repository
 
 ### Answer Questions
 3. What percent of total negotiations have a seller action/event? What SQL statement(s) did you use?
-4. Does seller conversion change based on receiving an offer from more than one buyer (`buyer_entity_id`)? What evidence can you provide to support your answer?
+4. Does seller conversion change based on receiving an offer from more than one buyer (`buyer_entity_id`)? What evidence can you provide to support your answer? What other data would you need to support/prove your assumptions?
+5. What would a more normalized model for our data look like? Draw it out.
+
+### For In-Person Discussion
+6. How would you segment our data and/or customers?
+7. How can you explain the rate (uneven) of negotiation events?
