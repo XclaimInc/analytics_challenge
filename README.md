@@ -21,7 +21,7 @@ XCLAIM's core product is a 2-sided marketplace for buyers (hedge funds, banks, a
 ### Notes
 - You can *assume* the negotiation event with the highest ID is the most recent.
 - `buyer_entity_id` and `legal_entity_id` are from the same `legal_entities` table. If there is a `buyer_entity_id` that is the same as a `legal_entity_id` it is the same `legal_entity`. For example, id 882833, is a buyer.
-- The first negotiation event in a negotiation .
+- The first negotiation event in a negotiation is an offer from a buyer to a seller.
 - Seller actions/events are any event not made by the initial `buyer_entity_id` and may for the purposes of conversion, include only: offer, accept, and decline. Both buyers and sellers can have offer, accept, and decline events, but only a buyer can have the first offer even on a negotiation.
 - It may be helpful to create a new list/table of valid buyers using the ids in `negotiation.buyer_entity_id` to understand when a `negotiation_event.legal_entity_id` is a buyer or seller.
 - If there is no `negotiation_event.legal_entity_id` assume it is a `cancel` action.
